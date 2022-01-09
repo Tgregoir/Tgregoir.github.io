@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8" />
     <title>Thibault Gregoir</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <p>Ceci est le début du site que je vais créer pour regrouper mes projets, Mais patience, ça sera fait d'ici 2023 </p>
-    <p>En attendant, voici le lien vers mon premier projet, une extension google chrome pour le site sQuiz : <a href="https://github.com/Tgregoir/sQuiz-Extension">Le lien</a> </p>
-    <p> Ce site peut aussi être considéré comme un projet. Le lien du gihtub est présent au lien suivant : <a href="https://github.com/Tgregoir/Tgregoir.github.io">Le second lien</a></p>
-    <!-- Me fait chier les branches git-->
+    <div class="general">
+        <h1>Site Internet Portfolio Thibault Gregoir</h1>
+        <p>Ceci est le début du site que je vais créer pour regrouper mes projets, Mais patience, ça sera fait d'ici 2023 </p>
+        <article class="article_style">
+            <img src="Images/sQuiz/logo_et_titre.png" class="article_content" style="width: 50%;height: 50%" alt="">
+            <p class="article_content"> Ce petit projet est une extension google chrome pour le site de jeu sQuizz. C'est une extension simple qui redirige vers les différentes room du site sans passer par le site. Ce projet à surtout été utile pour m'entrainer au HTML/CSS</p>
+            <button onclick=window.open('https://github.com/Tgregoir/sQuiz-Extension') class="article_content" style="margin-bottom: 10px"> Lien vers le Github </button>
+        </article>
+
+        <article class="article_style">
+            <p class="article_content"> Ce site peut aussi être vu comme un projet. Vous pouvez suivre son évolution en suivant le bouton en dessous</p>
+            <button onclick=window.open("https://github.com/Tgregoir/Tgregoir.github.io") class="article_content" style="margin-bottom: 10px"> Lien vers le Github </button>
+        </article>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
