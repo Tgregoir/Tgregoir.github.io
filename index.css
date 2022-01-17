@@ -1,19 +1,35 @@
 .general{
-
+    /* Il faut les 3 lignes du dessous pour centrer le contenu. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Images/Site Web/bg.jpg");
 }
 
 .article_style{
     margin-top: 20px;
     background-color: #585858;
     color: white;
-    width: 50%;
+    width: 55%;
     display: inline-block;
+    border-radius: 20px;
 }
 
 .article_content{
-    text-align: center;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
     display: block;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.button_Style{
+
+    border-radius: 10px;
+}
+.button_Style_GitHub{
+    background-color: #1b019b;
+    border-color: #1b019b;
+    color: white;
 }
