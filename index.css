@@ -6,7 +6,7 @@
     background-image: url("Images/Site Web/bg.jpg");
 }
 
-.article_style{
+.articleStyle{
     margin-top: 20px;
     background-color: #585858;
     color: white;
@@ -15,7 +15,7 @@
     border-radius: 20px;
 }
 
-.article_content{
+.articleContent{
     text-align: justify;
     padding-left: 15px;
     padding-right: 15px;
@@ -24,11 +24,10 @@
     font-size: 20px;
 }
 
-.button_Style{
-
+.buttonStyle{
     border-radius: 10px;
 }
-.button_Style_GitHub{
+.buttonStyleGitHub{
     background-color: #1b019b;
     border-color: #1b019b;
     color: white;
