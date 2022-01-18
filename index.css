@@ -2,13 +2,14 @@
 
 h1{
     color: white;
+    text-align: center;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 
-body{
+body, header{
     /* Il faut les 3 lignes du dessous pour centrer le contenu. */
     display: flex;
     flex-direction: column;
@@ -19,6 +20,22 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+
+}
+
+.headerLine{
+    border-left: solid 3px white;
+    height: 6rem;
+    position:absolute;
+    left: calc(50% - 1px);
+}
+
+.headerText{
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
 
 }
 
@@ -47,4 +64,33 @@ body{
     background-color: #1b019b;
     border-color: #1b019b;
     color: white;
+}
+
+.ulNavigation{
+    display: flex;
+    list-style: none;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding-left: 0;
+}
+
+.ulNavigationItem{
+    border-left: solid 1px white;
+}
+
+.ulNavigationContent{
+    display: list-item;
+
+    margin: 5px;
+    min-width: 7.5rem;
+
+    padding: 0 1.25rem 0 1.25rem;
+    letter-spacing: 0.2rem;
+    font-size: 25px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 550;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
 }

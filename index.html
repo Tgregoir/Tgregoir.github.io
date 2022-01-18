@@ -6,18 +6,31 @@
     <link rel="icon" href="Images/SiteWeb/Logo.png">
     <link rel="stylesheet" href="index.css">
 </head>
-<body >
-    <h1>Thibault Gregoir</h1>
-    <p>Ceci est le début du site que je vais créer pour regrouper mes projets, Mais patience, ça sera fait d'ici 2023 </p>
-    <p> Test</p>
-    <article class="articleStyle">
+<body>
+    <header style="margin-top: 4rem">
+        <div class="headerText">
+            <h1>Thibault Gregoir</h1>
+            <p style="font-size: 17px;">Ceci est le début du site que je vais créer pour regrouper mes projets, Mais patience, ça sera fait d'ici 2023 </p>
+            <div class="headerLine"></div>
+        </div>
+        <nav style="margin-top: 2rem">
+            <ul class="ulNavigation">
+                <li class="ulNavigationItem"><a href="#sQuizExtension" class="ulNavigationContent">sQuiz</a></li>
+                <li class="ulNavigationItem" style="border-right: solid 1px white"><a href="#SiteWeb" class="ulNavigationContent">Site Web</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <article id="sQuizExtension" class="articleStyle">
         <img src="Images/sQuiz/logo_et_titre.png" class="articleContent" style="width: 55%;height: 50%" alt="">
         <p class="articleContent"> Ce petit projet est une extension google chrome pour le site de jeu sQuizz. C'est une extension simple qui redirige vers les différentes room du site sans passer par le site. Ce projet à surtout été utile pour m'entrainer au HTML/CSS</p>
         <button onclick=window.open('https://github.com/Tgregoir/sQuiz-Extension') class="articleContent ; buttonStyleGitHub ; buttonStyle" > Lien vers le Github </button>
         <button onclick=window.open("https://squiz.gg/") class="articleContent ; buttonStyle" style="background-color: rgb(11, 145, 255); border-color: rgb(11, 145, 255); color:white">Le site Squizz</button>
     </article>
 
-    <article class="articleStyle">
+    <article id="SiteWeb" class="articleStyle">
         <p class="articleContent"> Ce site peut aussi être vu comme un projet. Vous pouvez suivre son évolution en suivant le bouton en dessous</p>
         <button onclick=window.open("https://github.com/Tgregoir/Tgregoir.github.io") class="articleContent ; buttonStyleGitHub ; buttonStyle"> Lien vers le Github </button>
         <p class="articleContent"> Ce site est inspiré d'un layout présent sur le site html5up. La "source" peut être trouvée en cliquant sur le bouton suivant</p>
