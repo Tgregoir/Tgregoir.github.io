@@ -7,7 +7,9 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
 }
-
+ul li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 body, header{
     /* Il faut les 3 lignes du dessous pour centrer le contenu. */
@@ -24,8 +26,9 @@ body, header{
 }
 
 .headerLine{
+    margin-top: 0.1rem;
     border-left: solid 3px white;
-    height: 6rem;
+    height: 5.9rem;
     position:absolute;
     left: calc(50% - 1px);
 }
@@ -37,6 +40,13 @@ body, header{
     padding-right: 15px;
     color: white;
 
+}
+/*Askip ça sera utile pour plus tard*/
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 
 .articleStyle{
@@ -75,7 +85,7 @@ body, header{
 }
 
 .ulNavigationItem{
-    border-left: solid 1px white;
+    border-radius: 3px;
 }
 
 .ulNavigationContent{
