@@ -9,11 +9,11 @@
 <body class="preload">
     <header style="margin-top: 4rem">
         <div class="headerText">
-            <h1>Thibault Gregoir</h1>
-            <p style="font-size: 17px;">Ceci est le début du site que je vais créer pour regrouper mes projets, Mais patience, ça sera fait d'ici 2023 </p>
-            <div class="headerLine"></div>
+            <h1 class="animationH1">Thibault Gregoir</h1>
+            <p class="animationP" style="font-size: 19px;text-align: center">Bienvenue sur mon site Internet <br> Vous pourrez y retrouver différents projets que j'ai réaliser afin d'améliorer mes compétences de manière utile <br> Vous pouvez en apprendre plus sur moi dans la section "A propos" du site</p>
+            <div class="headerLine animationOpacity"></div>
         </div>
-        <nav style="margin-top: 2rem">
+        <nav class="animationOpacity" style="margin-top: 2rem">
             <ul class="ulNavigation">
                 <li class="ulNavigationItem"><a href="#sQuizExtension" class="ulNavigationContent">sQuiz</a></li>
                 <li class="ulNavigationItem"><a href="#SiteWeb" class="ulNavigationContent">Site Web</a></li>
@@ -24,17 +24,18 @@
 
 
     <article id="sQuizExtension" class="articleStyle">
-        <img src="Images/sQuiz/logo_et_titre.png" class="articleContent" style="width: 55%;height: 50%" alt="">
-        <p class="articleContent"> Ce petit projet est une extension google chrome pour le site de jeu sQuizz. C'est une extension simple qui redirige vers les différentes room du site sans passer par le site. Ce projet à surtout été utile pour m'entrainer au HTML/CSS</p>
+        <img src="Images/sQuiz/logo_et_titre.png" class="articleContent" style="width: 55%;height: 50%;padding-top: 10px" alt="">
+        <p class="articleContent">Cette extension est faite pour les joueurs du site sQuizz. Une fois celle-ci installée, elle permet des rejoindre les différents salons ou le site lui même en ouvrant directement une page internet.</p>
+        <p class="articleContent">Ce projet assez simple m'a permis d'apprendre les bases du HTML/CSS.</p>
         <button onclick=window.open('https://github.com/Tgregoir/sQuiz-Extension') class="articleContent ; buttonStyleGitHub ; buttonStyle" > Lien vers le Github </button>
-        <button onclick=window.open("https://squiz.gg/") class="articleContent ; buttonStyle" style="background-color: rgb(11, 145, 255); border-color: rgb(11, 145, 255); color:white">Le site Squizz</button>
+        <button onclick=window.open("https://squiz.gg/") class="articleContent ; buttonStyle" style="background-color: rgb(11, 145, 255); border: 2px solid rgb(11, 145, 255); color:white">Le site Squizz</button>
     </article>
 
     <article id="SiteWeb" class="articleStyle">
-        <p class="articleContent"> Ce site peut aussi être vu comme un projet. Vous pouvez suivre son évolution en suivant le bouton en dessous</p>
+        <p class="articleContent" style="padding-top: 10px"> Ce site peut aussi être vu comme un projet. Vous pouvez suivre son évolution en suivant le bouton en dessous</p>
         <button onclick=window.open("https://github.com/Tgregoir/Tgregoir.github.io") class="articleContent ; buttonStyleGitHub ; buttonStyle"> Lien vers le Github </button>
         <p class="articleContent"> Ce site est inspiré d'un layout présent sur le site html5up. La "source" peut être trouvée en cliquant sur le bouton suivant</p>
-        <button onclick=window.open("https://html5up.net/dimension") class="articleContent ; buttonStyle"> Lien vers html5up </button>
+        <button onclick=window.open("https://html5up.net/dimension") class="articleContent ; buttonStyle" style="border: 2px solid white; background-color: white "> Lien vers html5up </button>
     </article>
     <script src="index.js"></script>
 </body>

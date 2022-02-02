@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+/*----- Global -----*/
+
+body, header{
+    /* Il faut les 3 lignes du dessous pour centrer le contenu. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Images/SiteWeb/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 h1{
     color: white;
     text-align: center;
@@ -7,23 +21,10 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
 }
-ul li:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+/*----- Global -----*/
 
-body, header{
-    /* Il faut les 3 lignes du dessous pour centrer le contenu. */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*----- Header -----*/
 
-    background-image: url("Images/SiteWeb/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
-}
 
 .headerLine{
     margin-top: 0.1rem;
@@ -39,41 +40,11 @@ body, header{
     padding-left: 15px;
     padding-right: 15px;
     color: white;
-
-}
-/*Askip ça sera utile pour plus tard*/
-.preload * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
 }
 
-.articleStyle{
-    margin-top: 20px;
-    background-color: #383838;
-    color: white;
-    width: 55%;
-    display: inline-block;
-    border-radius: 20px;
-}
-
-.articleContent{
-    text-align: justify;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: block;
-    margin: 10px auto;
-    font-size: 20px;
-}
-
-.buttonStyle{
-    border-radius: 10px;
-}
-.buttonStyleGitHub{
-    background-color: #1b019b;
-    border-color: #1b019b;
-    color: white;
+/*----- Header ul -----*/
+ul li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .ulNavigation{
@@ -102,5 +73,97 @@ body, header{
     color: white;
     text-align: center;
     text-decoration: none;
-
 }
+
+/*----- Header ul -----*/
+
+/*----- Header animation -----*/
+.animationH1{
+    animation: AnimH1 2s ease;
+}
+.animationP{
+    animation : AnimP 2s ease;
+}
+.animationOpacity{
+    animation: AnimOpacity 2s ease;
+}
+@keyframes AnimH1 {
+    0% {
+        margin-top: -50px;
+        font-size: 0;
+        opacity: 0;
+
+    }
+    75%{
+        margin-top: fill ;
+        font-size: xx-large;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes AnimP {
+    0% {
+        transform: scale(0,1);
+        opacity: 0;
+    }
+    75%{
+        transform: scale(1,1);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes AnimOpacity {
+    0% {
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*----- Header animation -----*/
+
+/*----- Header -----*/
+
+/*----- Article -----*/
+
+
+.articleStyle{
+    margin-top: 20px;
+    background-color: #383838;
+    color: white;
+    width: 55%;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.articleContent{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+/*----- Article Button -----*/
+.buttonStyle{
+    border-radius: 10px;
+}
+.buttonStyleGitHub{
+    background-color: #1b019b;
+    border: 2px solid #1b019b;
+    color: white;
+}
+/*----- Article Button -----*/
+
+/*----- Article -----*/
